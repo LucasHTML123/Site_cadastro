@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,400;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    height: 100vh;
+    background-image: linear-gradient(45deg, #46244C, #712B75, #C74B50, #D49B54);
+    background-size: 250% 250%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header
+{
+    background-color: #24252A;
+    height: 55px;
+    color: whitesmoke;
+    width: 100vw;
+    margin-bottom: 32px;
+    box-shadow: 0px 2px 11px #000000a3;
+}
+
+div#header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 15px;
+    padding-top: 3px;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Red Hat Mono', monospace;
+}
+
+div#header h1
+{
+    border: 3px solid rgb(255, 226, 188);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+div#header div
+{
+    padding-right: 15px;
+    padding-top: 7px;
+}
+
+div#header button
+{
+    font-family: 'Red Hat Mono', monospace, Arial, Arial, Helvetica, sans-serif;
+    width: 125px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    background-color: bisque;
+    color: #b67b34;
+    transition: 1.3s, ease 0.8s;
+}
+
+div#header button:hover
+{
+    background-color: #D49B54;
+    color: bisque;
+    cursor: pointer;
+    width: 150px;
+}
+
+div#header a#head
+{
+    text-decoration: none;
+}
+
+main
+{
+    width: 390px;
+    height: 485px;
+    margin: auto;
+    background-color: white;
+    text-align: left;
+    border-radius: 8px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 3px 3px 13px #00000066;
+}
+
+main p
+{
+    font-size: 15px;
+    text-align: center;
+}
+
+main a
+{
+    color: rgb(0, 22, 216);
+    text-decoration: underline;
+}
+
+main a:hover
+{
+    color: rgb(0, 14, 145);
+    cursor: pointer;
+}
+
+main a:active
+{
+    color: rgb(167, 0, 50);
+    cursor: default;
+    font-weight: normal;
+}
+
+input
+{
+    width: 180px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 2px solid rgba(68, 68, 68, 0.377);;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    transition: width 0.5s , ease-in-out 0.5s;
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+}
+
+.inpwithicon input
+{
+    padding-left: 30px;
+    width: 200px;
+}
+
+.inpwithicon
+{
+    position: relative;
+}
+
+.inpwithicon i
+{
+    position: absolute;
+    left: 12px;
+    top: 15px;
+    padding: 9px 8px;
+    width: 5px;
+}
+
+input:focus-visible
+{
+    outline: 0px transparent;
+    border-bottom: 2px solid rgb(167, 0, 50);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 230px;
+}
+
+input:hover
+{
+    border-bottom: 2px solid rgb(221, 0, 66);
+}
+
+input[type="button"]{
+    width: 180px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 60px;
+    padding: 15px;
+    background-color: rgb(253, 68, 83);
+    border-radius: 3px;
+    color: rgb(216, 216, 216);
+    border: none;
+    box-shadow: 3px 3px 7px #0000008f;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: 'Red Hat Mono', sans-serif, Arial, Helvetica, sans-serif;
+    transition: 1.3s, ease 1s;
+
+}
+
+input[type="button"]:hover{
+    background-color: rgb(255, 0, 157);
+    box-shadow: 3px 3px 13px #000000d6;
+    cursor: pointer;
+    width: 220px;
+}
+
+input[type="button"]:active{
+    background-color: rgb(253, 68, 83);
+    border-radius: 3px;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 7px #0000002e;
+    font-family: 'Red Hat Mono', sans-serif, Arial, Helvetica, sans-serif;
+    cursor: default;
+    box-shadow: 3px 3px 13px #000000d6;
+}
+
+#fim
+{
+    text-align: center;
+    color: white;
+    font-family: 'Red Hat Mono', monospace, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#fim a
+{
+    color: rgb(253, 197, 129);
+    text-decoration: none;
+}
+
+#fim a:hover
+{
+    color: rgb(196, 149, 93);
+}
+
+#fim a:active
+{
+    cursor: default;
+    color: rgb(243, 146, 165);
+}
