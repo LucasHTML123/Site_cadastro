@@ -89,7 +89,7 @@ div#header button:hover
     width: 150px;
 }
 
-div#header a#head
+div#header a.head
 {
     text-decoration: none;
 }
@@ -115,7 +115,7 @@ main p
 
 main a
 {
-    color: rgb(250, 151, 74);
+    color: rgb(255, 140, 0);
     text-decoration: underline;
 }
 
