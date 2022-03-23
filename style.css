@@ -115,19 +115,19 @@ main p
 
 main a
 {
-    color: rgb(0, 22, 216);
+    color: rgb(250, 151, 74);
     text-decoration: underline;
 }
 
 main a:hover
 {
-    color: rgb(0, 14, 145);
+    color: rgb(196, 134, 58);
     cursor: pointer;
 }
 
 main a:active
 {
-    color: rgb(167, 0, 50);
+    color: rgb(250, 151, 74);
     cursor: default;
     font-weight: normal;
 }
