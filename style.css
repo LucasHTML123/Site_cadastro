@@ -5,7 +5,7 @@
 *
 {
     padding: 0;
-    margin: 0;
+    margin: 0;              
 }
 
 body
@@ -36,7 +36,7 @@ header
     height: 55px;
     color: whitesmoke;
     width: 100vw;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
     box-shadow: 0px 2px 11px #000000a3;
 }
 
@@ -50,7 +50,7 @@ div#header
     padding-top: 3px;
     font-size: 13px;
     font-weight: 300;
-    font-family: 'Red Hat Mono', monospace;
+    font-family: 'Red Hat Mono', monospace, Arial, Helvetica;
 }
 
 div#header h1
@@ -193,7 +193,7 @@ input[type="button"]{
     padding: 15px;
     background-color: rgb(253, 68, 83);
     border-radius: 3px;
-    color: rgb(216, 216, 216);
+    color: rgb(230, 230, 230);
     border: none;
     box-shadow: 3px 3px 7px #0000008f;
     font-weight: 300;
