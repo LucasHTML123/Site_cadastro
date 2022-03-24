@@ -40,6 +40,7 @@ header
     width: 100vw;
     margin-bottom: 20px;
     box-shadow: 0px 2px 11px #000000a3;
+    position: fixed;
 }
 
 div#header
@@ -91,7 +92,25 @@ div#header button:hover
     width: 150px;
 }
 
+div#header button:active
+{
+    cursor: default;
+}
+
 div#header a.head
 {
     text-decoration: none;
+}
+
+div#header a:active
+{
+    cursor: default;
+}
+
+main
+{
+    width: 485px;
+    height: 150px;
+    background-color: white;
+    justify-content: center;
 }
