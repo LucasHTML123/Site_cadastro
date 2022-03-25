@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,400;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 *
 {
     margin: 0;
@@ -107,10 +110,49 @@ div#header a:active
     cursor: default;
 }
 
-main
-{
-    width: 485px;
-    height: 150px;
+main {
+    width: 390px;
+    height: 165px;
     background-color: white;
-    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -195px;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+input
+{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.37);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 3px;
+    width: 210px;
+    margin-bottom: 35px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+input:focus-visible
+{
+    
+}
+
+input[type="text"], input[type="password"]
+{
+    padding-left: 25px;
+}
+
+div.inpwithicon
+{
+    position: relative;
+}
+
+div.inpwithicon i
+{
+    position: absolute;
+    top: 11px;
+    left: 3px;
 }

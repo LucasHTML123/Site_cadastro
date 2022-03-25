@@ -161,10 +161,8 @@ input
 .inpwithicon i
 {
     position: absolute;
-    left: 12px;
-    top: 15px;
-    padding: 9px 8px;
-    width: 5px;
+    left: 20px;
+    top: 26px;
 }
 
 input:focus-visible
