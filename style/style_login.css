@@ -181,14 +181,15 @@ div#btn button
     text-align: center;
     transition: width 0.5s, ease-in-out 0.5s;
     box-shadow: 3px 3px 10px #00000059;
+    font-family: 'Red Hat Mono', monospace, Arial, Helvetica, sans-serif;
 }
 
 div#btn button:hover
 {
     background-color: #28a8a2;
     width: 230px;
-    color: wheat;
-    box-shadow: 3px 3px 10px #000000c2;
+    color: white;
+    box-shadow: 3px 3px 10px #00000094;
     cursor: pointer;
 }
 
