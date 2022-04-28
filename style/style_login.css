@@ -157,6 +157,16 @@ input[type="text"], input[type="password"]
 div.inpwithicon
 {
     position: relative;
+        
+}
+
+img#img
+{
+    width: 6.3%;
+    position: absolute;
+    top: 8px;
+    left: 57%;
+    cursor: pointer;
 }
 
 div.inpwithicon i
@@ -200,3 +210,4 @@ div#btn button:active
     cursor: default;
 
 }
+

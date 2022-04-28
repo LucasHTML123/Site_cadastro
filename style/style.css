@@ -98,7 +98,7 @@ div#header a.head
     main {max-width: 300px;}
 }
 
-@media only screen and (max-device-height: 531px) {
+@media only screen and (max-height: 531px) {
     main {height: 420px;}   
 }
 
@@ -127,19 +127,19 @@ main p
 
 main a
 {
-    color: rgb(255, 140, 0);
+    color: rgb(255 0 0);;
     text-decoration: underline;
 }
 
 main a:hover
 {
-    color: rgb(196, 134, 58);
+    color: rgb(196 58 58);
     cursor: pointer;
 }
 
 main a:active
 {
-    color: rgb(250, 151, 74);
+    color: rgb(255, 0, 0);
     cursor: default;
     font-weight: normal;
 }
@@ -157,30 +157,13 @@ input
     border-right: 0;
     transition: width 0.5s , ease-in-out 0.5s;
     font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    text-overflow: hidden;
 }
 
 .inpwithicon input
 {
     padding-left: 30px;
     width: 200px;
-}
-
-.password input
-{
-    padding-left: 30px;
-    width: 200px;
-}
-
-.password
-{
-    position: relative;
-}
-
-.password i
-{
-    position: absolute;
-    left: 20px;
-    top: 26px    
 }
 
 .inpwithicon
@@ -200,7 +183,7 @@ img#img
 {
     width: 5%;
     position: absolute;
-    top: 40px;
+    top: 39px;
     left: 57%;
     cursor: pointer;
 }
