@@ -94,6 +94,14 @@ div#header a.head
     text-decoration: none;
 }
 
+@media only screen and (max-device-width: 600px) {
+    main {max-width: 300px;}
+}
+
+@media only screen and (max-device-height: 531px) {
+    main {height: 420px;}   
+}
+
 main
 {
     width: 390px;
@@ -194,6 +202,7 @@ img#img
     position: absolute;
     top: 40px;
     left: 57%;
+    cursor: pointer;
 }
 
 input:focus-visible
