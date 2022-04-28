@@ -178,22 +178,22 @@ input
 .inpwithicon
 {
     position: relative;
+    padding-top: 20px;
 }
 
 .inpwithicon i
 {
     position: absolute;
     left: 20px;
-    top: 26px;
+    top: 47px;
 }
 
 img#img
 {
     width: 5%;
     position: absolute;
-    top: 15px;
+    top: 40px;
     left: 57%;
-    display: none;
 }
 
 input:focus-visible
