@@ -157,6 +157,24 @@ input
     width: 200px;
 }
 
+.password input
+{
+    padding-left: 30px;
+    width: 200px;
+}
+
+.password
+{
+    position: relative;
+}
+
+.password i
+{
+    position: absolute;
+    left: 20px;
+    top: 26px    
+}
+
 .inpwithicon
 {
     position: relative;
