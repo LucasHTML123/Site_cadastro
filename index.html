@@ -14,7 +14,7 @@
 <body>
     <header>
         <div id="header">
-                <h1 style="overflow: hidden; max-width: 250px; max-height: 40px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo magni, dolore omnis pariatur natus sit blanditiis dolores placeat, quas provident est corrupti voluptatem quidem? Iste accusantium velit optio ipsum totam.</h1>
+                <h1 style="overflow: hidden; max-width: 250px; max-height: 40px;">Lorem ipsum </h1>
                 <div>
                     <a class="head" href="#">
                         <button>Home</button>
@@ -25,23 +25,26 @@
                 </div>
         </div>
     </header>
-    <main>
-        <div class="inpwithicon">
-            <input type="name" id="text1" placeholder="Nome Completo">
-            <i class="fa fa-user fa-sm fa-fw"></i>
-        </div>
-        <div class="inpwithicon">
-            <input type="email" id="text2" placeholder="E-Mail">
-            <i class="fa fa-envelope fa-sm fa-fw"></i>
-        </div>
-        <div class="inpwithicon">
-            <input type="password" maxlength="20" id="text3" placeholder="Senha">
-            <img id="img" onclick="revelarSenha()" src="images/eye.svg" alt="eye">
-            <i class="fa fa-lock fa-sm fa-fw"></i>
-        </div>
-        <input type="button" value="Cadastrar">
-        <p>Clicando em criar conta você concorda com nossos <a href="#">Termos e Políticas de Privacidade</a></p>
-    </main>
+    <div id="infos">
+        <section id="cadastrar">
+            <div class="inpwithicon">
+                <input type="name" id="text1" placeholder="Nome Completo">
+                <i class="fa fa-user fa-sm fa-fw"></i>
+            </div>
+            <div class="inpwithicon">
+                <input type="email" id="text2" placeholder="E-Mail">
+                <i class="fa fa-envelope fa-sm fa-fw"></i>
+            </div>
+            <div class="inpwithicon">
+                <input type="password" maxlength="20" id="text3" placeholder="Senha">
+                <img id="img" onclick="revelarSenha()" src="images/eye.svg" alt="eye">
+                <i class="fa fa-lock fa-sm fa-fw"></i>
+            </div>
+            <input type="button" value="Cadastrar">
+            <p>Clicando em criar conta você concorda com nossos <a href="#">Termos e Políticas de Privacidade</a></p>
+        </section>
+
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>

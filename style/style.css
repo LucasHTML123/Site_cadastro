@@ -94,15 +94,13 @@ div#header a.head
     text-decoration: none;
 }
 
-@media only screen and (max-device-width: 600px) {
-    main {max-width: 300px;}
+div#infos
+{
+    display: flex;
+    justify-content: space-around;
 }
 
-@media only screen and (max-height: 531px) {
-    main {height: 420px;}   
-}
-
-main
+section#cadastrar
 {
     width: 390px;
     height: 450px;
@@ -119,25 +117,25 @@ main
     margin-left: -215px;
 }
 
-main p
+section#cadastrar p
 {
     font-size: 15px;
     text-align: center;
 }
 
-main a
+section#cadastrar a
 {
     color: rgb(255 0 0);;
     text-decoration: underline;
 }
 
-main a:hover
+section#cadastrar a:hover
 {
     color: rgb(196 58 58);
     cursor: pointer;
 }
 
-main a:active
+section#cadastrar a:active
 {
     color: rgb(255, 0, 0);
     cursor: default;
