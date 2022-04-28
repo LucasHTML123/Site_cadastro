@@ -187,6 +187,15 @@ input
     top: 26px;
 }
 
+img#img
+{
+    width: 5%;
+    position: absolute;
+    top: 15px;
+    left: 57%;
+    display: none;
+}
+
 input:focus-visible
 {
     outline: 0px transparent;
