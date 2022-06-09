@@ -158,33 +158,35 @@ input
     text-overflow: hidden;
 }
 
-.inpwithicon input
+.icon input
 {
     padding-left: 30px;
     width: 200px;
 }
 
-.inpwithicon
+.icon
 {
     position: relative;
     padding-top: 20px;
 }
 
-.inpwithicon i
+.icon i
 {
     position: absolute;
     left: 20px;
     top: 47px;
 }
 
-img#img
+img
 {
     width: 5%;
     position: absolute;
     top: 39px;
     left: 57%;
     cursor: pointer;
+    display: block;
 }
+
 
 input:focus-visible
 {
