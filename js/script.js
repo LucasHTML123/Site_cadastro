@@ -8,25 +8,4 @@ function revelarSenha() {
         input.type = 'password'
         img.setAttribute('src', 'images/eye.svg')
     }
-}
-
-// function mostrarBotao () {
-//     let img = document.querySelector('img')
-//     const css = window.getComputedStyle(img, null).display
-
-//     if (css === "none") {
-//         document.querySelector('img').className = "appear"
-//         return css;
-//     }
-    
-// }
-
-// function tirarBotao () {
-//     let img = document.querySelector('img')
-//     const css = window.getComputedStyle(img, null).display
-
-//     if (css === "block") {
-//         document.querySelector('img').className = "disappear";
-//         return css;
-//     }
-    
+}  
