@@ -139,14 +139,14 @@ section#cadastrar a:active
 }
 section#cadastrar #login 
 {
-    color: rgb(255, 0, 140);
-    text-decoration: underline;
+    color: rgb(134, 33, 72);
     font-size: 17px;
+    text-decoration: none;
 }
 
 section#cadastrar #login:hover
 {
-    color: rgb(255, 0, 221);
+    color: rgb(70, 10, 30);
     text-decoration: none;
 }
 
@@ -187,7 +187,7 @@ input
 
 img
 {
-    width: 5%;
+    width: 6.5%;
     position: absolute;
     top: 39px;
     left: 57%;
@@ -210,7 +210,7 @@ input:hover
     border-bottom: 2px solid rgb(221, 0, 66);
 }
 
-input[type="submit"]{
+input[type="button"]{
     width: 180px;
     text-align: center;
     margin: auto;
@@ -227,18 +227,18 @@ input[type="submit"]{
     font-weight: 300;
     font-size: 15px;
     font-family: 'Red Hat Mono', sans-serif, Arial, Helvetica, sans-serif;
-    transition: 1.3s, ease 1s;
+    transition: 1.3s;
 
 }
 
-input[type="submit"]:hover{
-    background-color: rgb(255, 0, 157);
+input[type="button"]:hover{
+    background-color: rgb(206, 57, 101);
     box-shadow: 3px 3px 13px #000000d6;
     cursor: pointer;
     width: 220px;
 }
 
-input[type="submit"]:active{
+input[type="button"]:active{
     background-color: rgb(253, 68, 83);
     border-radius: 3px;
     color: white;
