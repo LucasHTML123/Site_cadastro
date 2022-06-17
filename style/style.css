@@ -14,6 +14,7 @@ body
     background-image: linear-gradient(45deg, #46244C, #712B75, #C74B50, #D49B54);
     background-size: 250% 250%;
     animation: colors 15s ease infinite;
+    overflow: hidden;
 }
 
 @keyframes colors {
@@ -78,6 +79,7 @@ div#header button
     background-color: bisque;
     color: #b67b34;
     transition: 1.3s, ease 0.8s;
+    margin-right: 15px;
 }
 
 div#header button:hover
@@ -110,6 +112,7 @@ section#cadastrar
     padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 3px 3px 13px #00000066;
+    margin-top: 50px;
 }
 
 section#cadastrar p
@@ -164,6 +167,11 @@ input
     transition: width 0.5s , ease-in-out 0.5s;
     font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
     text-overflow: hidden;
+}
+
+input[type="password"]
+{
+    width: 10px;
 }
 
 .icon input
@@ -247,4 +255,22 @@ input[type="button"]:active{
     font-family: 'Red Hat Mono', sans-serif, Arial, Helvetica, sans-serif;
     cursor: default;
     box-shadow: 3px 3px 13px #000000d6;
+}
+
+#login
+{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Mono', monospace, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#login:hover
+{
+    text-decoration: 2px underline rgb(62, 0, 119);
 }
