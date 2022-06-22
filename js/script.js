@@ -1,5 +1,5 @@
 function revelarSenha() {
-    const img = document.querySelector('img')
+    const img = document.querySelector('img#eye')
     const input = document.querySelector('#text3')
     if (input.type === 'password') {
         input.type = 'text'

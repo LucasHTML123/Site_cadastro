@@ -43,10 +43,7 @@ header
 
 div#header
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+    display: inline-block;
     padding-left: 15px;
     padding-top: 3px;
     font-size: 13px;
@@ -60,39 +57,102 @@ div#header h1
     padding: 0px 9px 0px 9px;
     margin-top: 3px;
     margin-left: 5px;
+    width: 179px;
 }
 
 div#header div
 {
-    padding-right: 15px;
-    padding-top: 7px;
+    position: fixed;
+    margin-top: 5px;
+    left: 85%;
+    top: 1%;
 }
 
-div#header button
+img#user
 {
-    font-family: 'Red Hat Mono', monospace, Arial, Arial, Helvetica, sans-serif;
-    width: 125px;
-    height: 30px;
-    border-radius: 4px;
-    border: none;
-    text-align: center;
-    background-color: bisque;
-    color: #b67b34;
-    transition: 1.3s, ease 0.8s;
-    margin-right: 15px;
+    position: static;
+    width: 30px;
+    padding-right: 50px;
 }
 
-div#header button:hover
+ul li 
 {
-    background-color: #D49B54;
-    color: bisque;
+    display: none;
+    font-size: 16px;
+    padding: 5px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+ul
+{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 7px 5px #0000007d;
+    border-radius: 3px;
+    width: 110px;
+}
+
+ul li a
+{
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 5px;
+    width: 82%;
+    display: block;
+    padding-left: 15px;
+    color: #24252A;
+}
+
+ul a:visited
+{
+    color: #24252A;
+}
+
+div#buttons:hover ul li
+{
+    display: block;
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+
+ul li:hover
+{
+    background-color: #e0e0e7;
+    border-radius: 3px 3px 0px 0px;
     cursor: pointer;
-    width: 150px;
+}
+
+ul a
+{
+    text-decoration: none;
+}
+
+ul li:hover a
+{
+    color: #8c00ff;
+}
+
+ul li#bottom:hover
+{
+    border-radius: 0px 0px 3px 3px;
+}
+
+ul li#bottom 
+{
+    padding: 7px;
+    border-top: 1px solid rgb(0, 0, 0);
+    border-bottom: none;
 }
 
 div#header a.head
 {
     text-decoration: none;
+}
+
+div#header i
+{
+    color: white;
+    width: 500px;
 }
 
 div#infos
@@ -273,4 +333,9 @@ input[type="button"]:active{
 #login:hover
 {
     text-decoration: 2px underline rgb(62, 0, 119);
+}
+
+#login a
+{
+    width: 20px;
 }
