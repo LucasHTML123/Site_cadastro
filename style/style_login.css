@@ -40,7 +40,7 @@ header
     background-color: #24252A;
     height: 55px;
     color: whitesmoke;
-    width: calc(100vw + 1%);
+    width: 100vw;
     margin-bottom: 20px;
     box-shadow: 0px 2px 11px #000000a3;
 }
@@ -104,6 +104,91 @@ div#header button:active
 div#header a:active
 {
     cursor: default;
+}
+
+div#header div
+{
+    position: fixed;
+    left: min(75%, 85%);
+    top: 1%;
+}
+
+img#user
+{
+    position: static;
+    width: 80px;
+    padding-right: 50px;
+}
+
+ul li 
+{
+    display: none;
+    font-size: 16px;
+    padding: 5px;
+    border-bottom: 1px solid rgb(79, 140, 211);
+}
+
+ul
+{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 7px 5px #0000007d;
+    border-radius: 3px;
+    width: min(105px, 110px);
+}
+
+ul li a
+{
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 5px;
+    width: 82%;
+    display: block;
+    padding-left: 15px;
+    color: #1a1a1d;
+}
+
+ul a:visited
+{
+    color: #2f2e31;
+}
+
+div#buttons:hover ul li
+{
+    display: block;
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+
+ul li:hover
+{
+    background-color: #e0e0e7;
+    border-radius: 3px 3px 0px 0px;
+    cursor: pointer;
+}
+
+ul a
+{
+    text-decoration: none;
+    color: #24252A;
+    text-align: start;
+}
+
+ul li:hover a
+{
+    color: #ff4800;
+}
+
+ul li#bottom:hover
+{
+    border-radius: 0px 0px 3px 3px;
+}
+
+ul li#bottom 
+{
+    padding: 7px;
+    border-top: 1px solid rgb(79, 140, 211);
+    border-bottom: none;
 }
 
 section
