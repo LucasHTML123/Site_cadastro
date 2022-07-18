@@ -8,6 +8,10 @@
     margin: 0;              
 }
 
+:root {
+    --color-dark: #24252A
+}
+
 body
 {
     height: 100vh;
@@ -33,7 +37,7 @@ body
 
 header
 {
-    background-color: #24252A;
+    background-color: var(--color-dark);
     height: 55px;
     color: whitesmoke;
     width: calc(100vw + 1%);
@@ -72,15 +76,14 @@ img#user
 {
     position: static;
     width: 30px;
-    padding-right: 50px;
 }
 
 ul li 
 {
     display: none;
     font-size: 16px;
-    padding: 5px;
-    border-bottom: 1px solid rgb(79, 140, 211);
+    padding-left: 5px;
+    padding-top: 3px;
 }
 
 ul
@@ -100,19 +103,20 @@ ul li a
     width: 82%;
     display: block;
     padding-left: 15px;
-    color: #24252A;
+    color: var(--color-dark);
 }
 
 ul a:visited
 {
-    color: #38373a;
+    color: var(--color-dark);
 }
 
 div#buttons:hover ul li
 {
     display: block;
     padding-bottom: 5px;
-    margin-top: 15px;
+    margin-top: 13px;
+    color: var(--color-dark);
 }
 
 ul li:hover
@@ -139,9 +143,7 @@ ul li#bottom:hover
 
 ul li#bottom 
 {
-    padding: 7px;
-    border-top: 1px solid rgb(79, 140, 211);
-    border-bottom: none;
+    padding-left: 5px;
 }
 
 div#header a.head

@@ -14,7 +14,7 @@
     <header>
         <div id="header">
                 <h1>Lorem ipsum </h1>
-                <div id="buttons">
+                <div id="buttons" style="width: 30px;">
                     <img id="user" src="images/circle-user-regular.svg" alt="user">
                         <ul>
                             <a href="pages/login.html"><li>Login</li></a>
@@ -26,20 +26,21 @@
     <div id="infos">
         <section id="cadastrar">
             <div class="icon">
-                <input type="name" id="text1" placeholder="Nome Completo">
+                <input type="name" id="name" placeholder="Nome Completo">
                 <i class="fa fa-user fa-sm fa-fw"></i>
             </div>
             <div class="icon">
-                <input type="email" id="text2" placeholder="E-Mail">
+                <input type="email" id="email" placeholder="E-Mail">
                 <i class="fa fa-envelope fa-sm fa-fw"></i>
             </div>
             <div class="icon">
-                <input type="password" maxlength="17" id="text3" placeholder="Senha">
+                <input type="password" maxlength="17" id="password" placeholder="Senha">
                 <img onclick="revelarSenha()" id="eye" src="images/eye.svg" alt="eye">
                 <i class="fa fa-lock fa-sm fa-fw"></i>
             </div>
             <input type="button" value="Cadastrar">
             <p>Clicando em criar conta você concorda com nossos <a href="#">Termos e Políticas de Privacidade</a></p>
+            <p id="erro"></p>
         </section>
     </div>
     <script src="js/script.js"></script>
