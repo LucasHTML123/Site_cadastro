@@ -3,7 +3,7 @@ function revelarSenha() {
     const input = document.querySelector('#password')
     if (input.type === 'password') {
         input.type = 'text'
-        img.setAttribute('src', 'images/eye-slashed.svg')
+        img.setAttribute('src', 'images/eyeSlashed.svg')
     } else {
         input.type = 'password'
         img.setAttribute('src', 'images/eye.svg')

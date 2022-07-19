@@ -3,7 +3,7 @@ function revelarSenha() {
     const img = document.getElementById('img')
     if (senha.type == 'password') {
         senha.type = 'text'
-        img.setAttribute('src', '../images/eye-slashed.svg')
+        img.setAttribute('src', '../images/eyeSlashed.svg')
     } else {
         senha.type = 'password'
         img.setAttribute('src', '../images/eye.svg')
