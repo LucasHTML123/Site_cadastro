@@ -292,5 +292,15 @@ div#btn button:active
     background-color: rgb(253, 68, 83);
     color: white;
     cursor: default;
+}
 
+#erro
+{
+    color: red;
+    background-color: rgb(255, 152, 152);
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Red Hat Mono', monospace, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
 }
