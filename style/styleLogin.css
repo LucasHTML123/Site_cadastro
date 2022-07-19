@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+:root 
+{
+    --color-dark: #24252A;
+}
+
 body
 {
     height: 100vh;
@@ -116,8 +121,7 @@ div#header div
 img#user
 {
     position: static;
-    width: 80px;
-    padding-right: 50px;
+    width: 30px;
 }
 
 ul li 
@@ -125,7 +129,6 @@ ul li
     display: none;
     font-size: 16px;
     padding: 5px;
-    border-bottom: 1px solid rgb(79, 140, 211);
 }
 
 ul
@@ -145,12 +148,11 @@ ul li a
     width: 82%;
     display: block;
     padding-left: 15px;
-    color: #1a1a1d;
 }
 
 ul a:visited
 {
-    color: #2f2e31;
+    color: inherit;
 }
 
 div#buttons:hover ul li
@@ -158,25 +160,33 @@ div#buttons:hover ul li
     display: block;
     padding-bottom: 5px;
     margin-top: 15px;
+    color: var(--color-dark);
+    font-weight: 500;
+    text-shadow: 0px 0px 4px #00000057;
+}
+
+div#buttons
+{
+    padding-right: 0;
+    right: 159px;
 }
 
 ul li:hover
 {
-    background-color: #e0e0e7;
-    border-radius: 3px 3px 0px 0px;
+    background-color: #e97272;
+    border-radius: 3px;
     cursor: pointer;
 }
 
 ul a
 {
     text-decoration: none;
-    color: #24252A;
     text-align: start;
 }
 
-ul li:hover a
+ul li:hover
 {
-    color: #ff4800;
+    border-radius: 3px 3px 0px 0px;
 }
 
 ul li#bottom:hover
@@ -184,11 +194,9 @@ ul li#bottom:hover
     border-radius: 0px 0px 3px 3px;
 }
 
-ul li#bottom 
+ul li 
 {
     padding: 7px;
-    border-top: 1px solid rgb(79, 140, 211);
-    border-bottom: none;
 }
 
 section

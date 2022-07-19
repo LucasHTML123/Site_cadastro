@@ -13,6 +13,7 @@ function revelarSenha() {
 function checarDados() {
     const nome = document.querySelector('#email').value;
     const senha = document.querySelector('#password').value;
+    const nomeCadastrado = localStorage.getItem('nome');
     const senhaCadastrada = localStorage.getItem('senha');
     const emailCadastrado = localStorage.getItem('email');
     let paragrafoErro = document.querySelector('#erro')
@@ -21,14 +22,19 @@ function checarDados() {
         paragrafoErro.innerHTML = 'Favor preencher seus dados corretamente';
         return;
     } else {
-        if(nome === emailCadastrado && senha === senhaCadastrada) {
+        if(nome === nomeCadastrado || nome === emailCadastrado && senha === senhaCadastrada) {
             paragrafoErro.innerHTML = '';
-            window.location.assign('https://google.com.br')
+            window.location.assign('../index.html')
             return;
         } else {
             paragrafoErro.innerHTML = 'Os dados digitados estão incorretos';
             return;
         }
     }
-
 }
+
+window.addEventListener('keypress', function(e) {
+    if (e.code === 'Enter') {
+        checarDados()
+    }
+})
