@@ -20,6 +20,7 @@ body
     background-image: linear-gradient(45deg, #46244C, #712B75, #C74B50, #D49B54);
     background-size: 250% 250%;
     animation: colors 12s ease infinite;
+    overflow: hidden;
 }
 
 @keyframes colors
@@ -42,20 +43,17 @@ body
 
 header
 {
-    background-color: #24252A;
+    background-color: var(--color-dark);
     height: 55px;
     color: whitesmoke;
-    width: 100vw;
+    width: calc(100vw + 1%);
     margin-bottom: 20px;
     box-shadow: 0px 2px 11px #000000a3;
 }
 
 div#header
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+    display: inline-block;
     padding-left: 15px;
     padding-top: 3px;
     font-size: 13px;
@@ -69,51 +67,13 @@ div#header h1
     padding: 0px 9px 0px 9px;
     margin-top: 3px;
     margin-left: 5px;
-    max-width: 250px; 
-    max-height: 40px;
-    overflow: hidden;
-}
-
-div#header div
-{
-    padding-right: 15px;
-    padding-top: 7px;
-}
-
-div#header button
-{
-    font-family: 'Red Hat Mono', monospace, Arial, Arial, Helvetica, sans-serif;
-    width: 125px;
-    height: 30px;
-    border-radius: 4px;
-    border: none;
-    text-align: center;
-    background-color: bisque;
-    color: #b67b34;
-    transition: 1.3s, ease 0.8s;
-}
-
-div#header button:hover
-{
-    background-color: #D49B54;
-    color: bisque;
-    cursor: pointer;
-    width: 150px;
-}
-
-div#header button:active
-{
-    cursor: default;
-}
-
-div#header a:active
-{
-    cursor: default;
+    width: 196px;
 }
 
 div#header div
 {
     position: fixed;
+    margin-top: 5px;
     left: min(75%, 85%);
     top: 1%;
 }
@@ -122,13 +82,15 @@ img#user
 {
     position: static;
     width: 30px;
+    cursor: pointer;
 }
 
 ul li 
 {
     display: none;
     font-size: 16px;
-    padding: 5px;
+    padding-left: 5px;
+    padding-top: 3px;
 }
 
 ul
@@ -147,7 +109,8 @@ ul li a
     padding-top: 5px;
     width: 82%;
     display: block;
-    padding-left: 15px;
+    padding-left: 8px;
+    
 }
 
 ul a:visited
@@ -159,34 +122,36 @@ div#buttons:hover ul li
 {
     display: block;
     padding-bottom: 5px;
-    margin-top: 15px;
+    margin-top: 8px;
     color: var(--color-dark);
     font-weight: 500;
     text-shadow: 0px 0px 4px #00000057;
 }
 
-div#buttons
+div#buttons {
+    width: 30px;
+}
+
+div#buttons:hover 
 {
-    padding-right: 0;
-    right: 159px;
+    width: min(105px, 110px);
 }
 
 ul li:hover
 {
     background-color: #e97272;
-    border-radius: 3px;
+    border-radius: 3px 3px 0px 0px;
     cursor: pointer;
 }
 
 ul a
 {
     text-decoration: none;
-    text-align: start;
 }
 
-ul li:hover
+ul li:hover a
 {
-    border-radius: 3px 3px 0px 0px;
+    color: #ff4800;
 }
 
 ul li#bottom:hover
@@ -194,11 +159,21 @@ ul li#bottom:hover
     border-radius: 0px 0px 3px 3px;
 }
 
-ul li 
+ul li#bottom 
 {
-    padding: 7px;
+    padding-left: 5px;
 }
 
+div#header a.head
+{
+    text-decoration: none;
+}
+
+div#header i
+{
+    color: white;
+    width: 500px;
+}
 section
 {
     display: flex;
