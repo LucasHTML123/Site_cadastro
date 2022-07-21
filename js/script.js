@@ -45,7 +45,8 @@ function guardaDados() {
 
     localStorage.setItem('nome', nome);
     localStorage.setItem('email', email);
-    localStorage.setItem('senha', senha);
+    localStorage.setItem('password', senha);
+    location.assign('pages/user.html')
 }
 
 window.addEventListener('keypress', function(e) {

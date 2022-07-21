@@ -14,7 +14,7 @@ function checarDados() {
     const nome = document.querySelector('#email').value;
     const senha = document.querySelector('#password').value;
     const nomeCadastrado = localStorage.getItem('nome');
-    const senhaCadastrada = localStorage.getItem('senha');
+    const senhaCadastrada = localStorage.getItem('password');
     const emailCadastrado = localStorage.getItem('email');
     let paragrafoErro = document.querySelector('#erro')
 
@@ -24,7 +24,7 @@ function checarDados() {
     } else {
         if(nome === nomeCadastrado || nome === emailCadastrado && senha === senhaCadastrada) {
             paragrafoErro.innerHTML = '';
-            window.location.assign('../index.html')
+            window.location.assign('../pages/user.html')
             return;
         } else {
             paragrafoErro.innerHTML = 'Os dados digitados estão incorretos';

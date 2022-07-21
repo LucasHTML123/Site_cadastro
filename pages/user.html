@@ -14,20 +14,23 @@
                 <div id="buttons">
                     <img id="user" src="../images/circleUserRegular.svg" alt="user">
                         <ul>
-                            <a href="pages/login.html"><li>Login</li></a>
+                            <a href="login.html"><li>Login</li></a>
                             <a href="../index.html"><li id="bottom">Cadastrar</li></a></li>
                         </ul>
                 </div>
         </div>
     </header>
     <section id="container">
-        <h1 id="nome"> Olá Lucas</h1>
+        <h1 id="name"></h1>
         <label for="email">E-Mail cadastrado:</label>
         <p id="email">tucaskohlermfa@gmail.com</p>
         <label for="senha">Senha:</label>
-        <p id="password">*********</p>
-        <a href="#"><button id="changePassword">Mudar senha</button></a>
-        <a href="#"><button id="leaveUser">Sair</button></a>
+        <p id="password"></p>
+        <button onclick="mudarSenha()" id="changePassword">Mudar senha</button>
+        <button onclick="limparDados()" id="leaveUser">Sair</button>
+        <label id="label" for="novaSenha">Nova senha:</label>
+        <input type="text" id="novaSenha">
+        <button id="save">Salvar</button>
     </section>
     <script src="../js/scriptUser.js"></script>
 </body>
